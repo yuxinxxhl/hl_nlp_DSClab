@@ -31,3 +31,24 @@
 ![image-20211013195432825](images/Table-based FVSL/image-20211013195432825.png) 
 
 给出表T和陈述S以及mask了token的S‘
+
+##### 掩蔽显著token预测
+
+考虑到在事实检测任务上的监督信号稀少并且可能不够充分，引入掩蔽显著令牌预测作为一个辅助任务：
+
+###### **给定掩码过最显著token的陈述和相应表格，去预测一个掩码显著令牌token**
+
+辅助任务的参数更新会被主任务共享
+
+##### 显著感知数据增强
+
+把陈述中最不显著的token掩码掉，使用K个最大可能的token去替换他，得到了k个例子
+
+my name is houlei ->>> my name [] houlei 
+
+my name isn't houlei (eg)
+
+#### 实验结果
+
+后面看
+
