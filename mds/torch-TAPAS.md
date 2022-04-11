@@ -1,0 +1,3 @@
+AutoTokenizer：用来下载和选择模型相关的标记器并实例化
+
+AutoModelForSequenceClassification：下载模型本身
